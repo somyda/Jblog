@@ -2,13 +2,13 @@ package com.bitacademy.jblog.vo;
 
 import java.util.Date;
 
-public class Comments {
+public class Comment {
 	int cmtNo;
 	int postNo;
 	String cmtContent;
 	Date regDate;
 	
-	public Comments() {
+	public Comment() {
 		super();
 		this.cmtNo = 0;
 		this.postNo = 0;
@@ -16,7 +16,7 @@ public class Comments {
 		this.regDate = null;
 	}
 
-	public Comments(int postNo, String cmtContent) {
+	public Comment(int postNo, String cmtContent) {
 		super();
 		this.postNo = postNo;
 		this.cmtContent = cmtContent;

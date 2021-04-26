@@ -11,7 +11,7 @@ public class MainController {
 	public ModelAndView intro() {
 		ModelAndView mav = new ModelAndView();
 		
-		mav.setViewName( "/WEB-INF/views/main.jsp" );
+		mav.setViewName( "main" );
 		
 		return mav;
 	}

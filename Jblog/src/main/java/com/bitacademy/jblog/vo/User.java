@@ -2,14 +2,28 @@ package com.bitacademy.jblog.vo;
 
 import java.util.Date;
 
-public class Users{
+//import org.hibernate.validator.constraints.Email;
+//import org.hibernate.validator.constraints.Length;
+//import org.hibernate.validator.constraints.NotEmpty;
+
+public class User{
 	int userNo;
+
+//	@NotEmpty	//	name 필드는 null이 아니어야 하고
+//	@Length(min=2, max=8)		//	길이가 2글자 ~ 8글자
 	String id;
-	String userName;
+	
+//	@NotEmpty	//	name 필드는 null이 아니어야 하고
+//  @Length(min=2, max=10)		//	길이가 2글자 ~ 8글자
+    String userName;
+
+//	@NotEmpty	//	name 필드는 null이 아니어야 하고
+//	@Length(min=4, max=20)	//	길이가 4 ~ 20글자여야 한다
 	String password;
+
 	Date joinDate;
 	
-	public Users() {
+	public User() {
 		this.userNo = 0;
 		this.id = null;
 		this.userName = null;
@@ -17,7 +31,7 @@ public class Users{
 		this.joinDate = null;
 	}
 	
-	public Users(String id, String userName, String password) {
+	public User(String id, String userName, String password) {
 		this.userNo = 0;
 		this.id = id;
 		this.userName = userName;
@@ -64,7 +78,7 @@ public class Users{
 	
 	@Override
 	public String toString() {
-		return String.format("[userNo:%d, id:%s, userName:%s]", userNo, id, userName);
+		return String.format("[userNo:%d, id:%s, userName:%s, password:%s]", userNo, id, userName, password);
 	}
 }
 

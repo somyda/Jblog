@@ -33,10 +33,10 @@ public class Post {
 		this.postNo = postNo;
 	}
 	
-	public int getcateNo() {
+	public int getCateNo() {
 		return cateNo;
 	}
-	public void setcateNo(int cateNo) {
+	public void setCateNo(int cateNo) {
 		this.cateNo = cateNo;
 	}
 	

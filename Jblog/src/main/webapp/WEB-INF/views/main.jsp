@@ -17,7 +17,7 @@
 <body>
 <div align="center">
 <a href="/jblog"><img class="main" src="<%=request.getContextPath()%>/images/jblog_somy.png" width=200px height=100px alt="JBLOG"></a> <br>
-<a href="/jblog/user/login">로그인</a> <a href="/jblog/user/join">회원가입</a>
+<a href="/user/login">로그인</a> <a href="/user/join">회원가입</a>
 <br>
 <br>
 <form action="">
